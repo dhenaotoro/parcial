@@ -1,0 +1,7 @@
+.image-container {
+  margin-right: 0;
+  margin-left: 0px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(160,160,160, 50%);
+}
