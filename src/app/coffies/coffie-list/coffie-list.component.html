@@ -1,3 +1,21 @@
-<p>
-  coffie-list works!
-</p>
+<div class="col-lg-5">
+  <table class="table table-striped table-dark" style="margin-left: 20px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coffee of coffies; let i = index" [attr.data-index]="i">
+        <th scope="row">{{i}}</th>
+        <td>{{coffee.nombre}}</td>
+        <td>{{coffee.tipo}}</td>
+        <td>{{coffee.region}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="col-lg-7"></div>
